@@ -9,7 +9,7 @@
 <script setup>
   import AddingTodo from '../components/todoComponents/AddingTodo/AddingTodo.vue'
   import TodoList from '../components/todoComponents/ListContent/List.vue'
-  import { ref } from 'vue'
+  import { ref, computed } from 'vue'
 
   const todos = ref([])
 
