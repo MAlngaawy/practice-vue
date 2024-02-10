@@ -8,6 +8,7 @@
       <nav>
         <RouterLink to="/">Learn</RouterLink>
         <RouterLink to="/todo">Todo App</RouterLink>
+        <RouterLink to="/crud">Crud Operations</RouterLink>
       </nav>
     </div>
   </header>

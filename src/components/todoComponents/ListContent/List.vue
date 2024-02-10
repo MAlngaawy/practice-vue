@@ -22,6 +22,4 @@
   const reversedTodos = computed(() => {
     return [...todos].reverse()
   })
-
-  console.log('todostodos', todos)
 </script>

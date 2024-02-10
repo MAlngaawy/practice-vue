@@ -13,6 +13,11 @@ const router = createRouter({
       path: '/todo',
       name: 'todo',
       component: () => import('../views/TodoApp.vue')
+    },
+    {
+      path: '/crud',
+      name: 'crud',
+      component: () => import('../views/CrudOperations.vue')
     }
   ]
 })
