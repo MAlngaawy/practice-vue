@@ -1,13 +1,13 @@
 <template>
   <div class="item">
-    <h3 @click="handleDoneTodo" :class="{ doneItem: item.done }">
+    <h3 @click="() => doneTodo(item.id)" :class="{ doneItem: item.done }">
       {{ item.message }}
     </h3>
     <v-btn
       class="deleteIcon"
       icon="mdi-trash-can"
       color="red-lighten-2"
-      @click="deleteTodo"
+      @click="() => deleteTodo(item.id)"
     ></v-btn>
   </div>
 </template>
@@ -18,14 +18,6 @@
     'deleteTodo',
     'doneTodo',
   ])
-
-  const handleDeleteTodo = () => {
-    deleteTodo(item.id)
-  }
-
-  const handleDoneTodo = () => {
-    doneTodo(item.id)
-  }
 </script>
 
 <style>
